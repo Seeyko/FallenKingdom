@@ -1,0 +1,88 @@
+#									      	
+#   Author : Seeyko
+# 	Start on: 13/04/17										    
+#   First release on: 25/04/17
+#	
+#
+#	Any report, correction, question go here: https://www.spigotmc.org/members/seeyko.330398/
+#   This plugin is free and will stay free, don't try to sell it.
+# 	
+# ENG:
+# Hello all, this is Seeyko and who saw my first plugin.
+# I post this because i want to learn more about spigot API and java in general.
+# So if you have time to give, read my code and pm with, we can discuss about how
+# i can optimize my code, make it more light, how to become more professionial in this.
+# I wait for you returns for the bug, because i did'nt have a server for testing it...
+# And for using my plugin, if you are not french you can but all the message are in french and hard to translate
+# (All message are separated in all the classes...)
+# BUT, i have plained to put all the message in one YAML files and it will be easy to translate.
+# If you want to use it, you just have to put in in your plugins folder, with worldguard and worldedit and put your spigot to 1.8.8
+# then, go where you want to put the base for your team, it will create base of 13X13, just go in the center of the base and type
+# /basebleu for the blue base, /basejaune for the yellow base, /baserouge for the redbase, /baseverte for the green base.
+# then go to your spawnpoint (lobby of the game) and type /baseSpawn, it will define the point where people who first join will spawn.
+#in this file, "nombre-joueurs: " will define the number of player a game can handle.
+# spawn-y will define when player will be teleport back to the spawn when they are in the lobby (if you made a jump or something during the waiting.)
+# Don't touch anything else in the "team" part.
+#Then stop and start the server and tell your friend to join the game ;)
+# If you have any question write a pm to me.
+
+# FR :
+# Salut a tous, c'est Seeyko. C'est mon premier plugin donc soyez indulgents...
+# Je le poste pour mieux apprendre car selon moi le meilleur moyen d'apprendre c'est de partager.
+# Donc si vous voulez m'aidez, lisez mon code et faites moi part de mes erreurs, de comment optimiser mon code etc...
+# Je n'ai pas de serveur pour le tester donc certaines fonctionnalités peuvent buguer, ceci est une beta donc merci de me le reporter!
+# J'ai prévu en premier lieu de corriger les bugs avec vos retours et de rendre le plugin complétement configurable via ce fichier.
+# Tout les messages etc... seront configurables dans le futur.
+# Alors pour utiliser ce plugin vous devez être en 1.8.8, et avoir les derniéres version de worldedit et worldguard sur votre serveur.
+# Si vous avez un lobby d'attente en attendant que la partie soit rempli, allez au centre de celle-ci et faite /baseSpawn, ensuite
+# reglez le spawn-y en fonction de la hauteur ou les joueurs ne doivent pas tomber en dessous ou il seront re tp back. Cela
+# n'est pris en compte que pendant la partie Lobby du jeu, plus quand la game est lancé !
+# "nombre-joueurs" défini le nombre de joueurs maximum.
+# Pour le moment ne pas toucher la partie 'teams'.
+# Pour changer la partie des bases, allez in game et faites /basebleu, /basejaune, /baserouge, /baseverte, pour chacune des 4 bases
+# Cela créera des bases de 13X13.
+# Ensuite faites un reload du serveur et vous pouvez dire a vos amis de rejoindre !
+#Si vous avez des questions n'hésitez pas a m'envoyer des messages je serait réactif !
+# Bon jeu a tous !
+
+number-of-players: 8
+name-of-the-world: world
+spawn-y: 50
+team:
+  red:
+    name: Rouge
+    color: '&a'
+    data: 14
+  blue:
+    name: Bleue
+    color: '&9'
+    data: 11
+  yellow:
+    name: Jaune
+    color: '&e'
+    data: 4
+  green:
+    name: Verte
+    color: '&a'
+    data: 5
+Base:
+  bleu:
+    x: -100.0
+    y: 5.0
+    z: -100.0
+  jaune:
+    x: -100.0
+    y: 5.0
+    z: 100.0
+  rouge:
+    x: 100.0
+    y: 5.0
+    z: -100.0
+  verte:
+    x: 100.0
+    y: 5.0
+    z: 100.0
+Spawn:
+  x: 0.6068584087235517
+  y: 67.0
+  z: 0.6200022131436207

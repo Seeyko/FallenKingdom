@@ -1,0 +1,38 @@
+name: FallenKingdom
+version: 0.1.1
+author: Seeyko
+main: net.Seeyko.fr.FallenKingdom
+commands:
+ forcestart:
+  description: Force the game to start
+  permission: fc.forcestart
+  usage: /forcestart
+ rules:
+  description: Rules of the FallenKingdom
+  permission:
+  usage: /rules
+ king:
+  description: Open the inventory for choosing to place or not your king
+  permission:
+  usage: /king 
+ BaseBlue:
+  description: Create blue base
+  permission:
+  usage: /BaseBlue
+ BaseRed:
+  description: Create red base
+  permission:
+  usage: /BaseRed
+ BaseGreen:
+  description: Create green base
+  permission:
+  usage: /BaseGreen
+ BaseYellow:
+  description: Create yellow base
+  permission:
+  usage: /BaseYellow
+ BaseSpawn:
+  description: Create a spawn for the lobby (Waiting phase)
+  permission:
+  usage: /BaseSpawn
+depend: [WorldGuard, WorldEdit]
